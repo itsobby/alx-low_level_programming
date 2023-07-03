@@ -2,7 +2,7 @@
 
 /**
  * _memset - this funtion fills memory with a constant byte.
- * @b: a constant byte.
+ * @c: a constant byte.
  * @n: number of bytes.
  * @s: pointers to memory.
  *
