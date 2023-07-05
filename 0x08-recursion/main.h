@@ -11,3 +11,5 @@ int helper_f(int n, int i);
 int _strlen_recursion(char *s);
 int is_palindrome(char *s);
 int helper(char *s, int length);
+int wildcmp(char *s1, char *s2);
+int findsrc(char *s, char c, int i, int p);
