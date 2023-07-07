@@ -3,9 +3,27 @@
 /**
  * _atoi - Entry point
  * @s: input
- * Return: Always 0 (Success)
+ * Return: res
  */
 int _atoi(char *s)
 {
-  return (0);
+	int sign = 1, i = 0; 
+	unsigned int res = 0;
+
+	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+	{
+		if (s[i] == '-')
+			sign *= -1;
+		i++;
+	}
+
+	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	{
+		res = (res * 10) + (s[i] - '0');
+		i++;
+	}
+
+	res *= sign;
+
+	return (res);
 }
